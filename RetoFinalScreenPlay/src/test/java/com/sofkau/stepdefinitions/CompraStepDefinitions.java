@@ -8,6 +8,7 @@ import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 
+import static com.sofkau.tasks.AgregarProductosCarrito.agregarProductosCarrito;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegaAlInicioSesion.navegaAlInicioSesion;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
@@ -32,7 +33,7 @@ public class CompraStepDefinitions extends Configuracion {
                             .conElEmail("juanmanuelgofu@gmail.com")
                             .conLaContrasenna("Juan1997")
             );
-        }catch (Exception exception){
+        } catch (Exception exception) {
             quitarDriver();
             Assertions.fail(exception.getMessage(), exception);
             LOGGER.warn(exception.getMessage(), exception);
@@ -41,12 +42,28 @@ public class CompraStepDefinitions extends Configuracion {
 
     @When("el usuario finaliza una compra agregando productos en el carrito")
     public void elUsuarioFinalizaUnaCompraAgregandoProductosEnElCarrito() {
-
+        try {
+            theActorInTheSpotlight().attemptsTo(
+                    agregarProductosCarrito()
+            );
+        } catch (Exception exception) {
+            quitarDriver();
+            Assertions.fail(exception.getMessage(), exception);
+            LOGGER.warn(exception.getMessage(), exception);
+        }
     }
 
     @When("completa la informacion de envio y facturacion")
     public void completaLaInformacionDeEnvioYFacturacion() {
+        try {
+            theActorInTheSpotlight().attemptsTo(
 
+            );
+        } catch (Exception exception) {
+            quitarDriver();
+            Assertions.fail(exception.getMessage(), exception);
+            LOGGER.warn(exception.getMessage(), exception);
+        }
     }
 
     @Then("debera ser redireccionado a la pagina de pago")
