@@ -26,7 +26,7 @@ public class Configuracion {
     protected WebDriver webDriver;
 
 
-    private void setupUser( WebDriver webDriver) {
+    private void setupUser() {
         configurarDriver();
         OnStage.setTheStage(new OnlineCast());
         theActorCalled(ACTOR).can(BrowseTheWeb.with(webDriver));
@@ -49,7 +49,7 @@ public class Configuracion {
     }
 
     protected void configurarNavegador() {
-        setupUser(webDriver);
+        setupUser();
         setUplog4j();
     }
 

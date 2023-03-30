@@ -8,6 +8,8 @@ import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 
+import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
+import static com.sofkau.tasks.NavegaAlInicioSesion.navegaAlInicioSesion;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class CompraStepDefinitions extends Configuracion {
@@ -22,6 +24,13 @@ public class CompraStepDefinitions extends Configuracion {
             theActorInTheSpotlight().wasAbleTo(
                     new AbrirPaginaInicial()
 
+            );
+
+            theActorInTheSpotlight().attemptsTo(
+                    navegaAlInicioSesion(),
+                    iniciarSesion()
+                            .conElEmail("juanmanuelgofu@gmail.com")
+                            .conLaContrasenna("Juan1997")
             );
         }catch (Exception exception){
             quitarDriver();
