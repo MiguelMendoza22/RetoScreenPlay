@@ -154,7 +154,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2023 14:37</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 30-03-2023 16:56</span>
     <br style="clear:left"/>
 </div>
 
@@ -197,9 +197,9 @@ para ahorrar tiempo de ir al supermercado físico
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Compra exitosa
+                                <span class="error-color">Compra exitosa
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -216,53 +216,77 @@ para ahorrar tiempo de ir al supermercado físico
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Stale element reference exception: stale element reference: element is not attached to the page document</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.StaleElementReferenceException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.sofkau.tasks.AgregarProductosCarrito.performAs(AgregarProductosCarrito.java:17)<br />com.sofkau.stepdefinitions.CompraStepDefinitions.elUsuarioFinalizaUnaCompraAgregandoProductosEnElCarrito(CompraStepDefinitions.java:45)<br />io.cucumber.java.Invoker.invoke(Invoker.java:27)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:49)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:51)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:67)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:227)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:54)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)<br />worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource9491255828916244599.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
                 <img src="5cb3f62367119bcc73dc5c5bf269e13ba991f2b43798dce86cc7bbf1c06db735.png" title=" Given que el usuario esta logueado en la pagina principal" width="1920"/>
                 <img src="5cb3f62367119bcc73dc5c5bf269e13ba991f2b43798dce86cc7bbf1c06db735.png" title=" Jesus abrir pagina inicial" width="1920"/>
                 <img src="5cb3f62367119bcc73dc5c5bf269e13ba991f2b43798dce86cc7bbf1c06db735.png" title=" Jesus opens the Pagina inicial" width="1920"/>
-                <img src="95aedced8b9ea8a312774459dd3372e70494771fab07d07761e25ef6ce3dc5ec.png" title=" Jesus opens the Pagina inicial (completed)" width="1920"/>
-                <img src="95aedced8b9ea8a312774459dd3372e70494771fab07d07761e25ef6ce3dc5ec.png" title=" Jesus abrir pagina inicial (completed)" width="1920"/>
-                <img src="af78eb79750d7e075e15ad885dcbf58eb5708985ff64cdb026e40e06113402f7.png" title=" Jesus navega al inicio sesion" width="1920"/>
-                <img src="ea280637f3e5dca6da9d525276329218245fabd27f8991a96e218064259d7c59.png" title=" Jesus clicks on Bot&Atilde;&sup3;n pagina iniciar sesi&Atilde;&sup3;n" width="1920"/>
-                <img src="e94ece79a2d0b0f2b334217c685ce2a658d0524fb40b05415fefb6ea75fbce64.png" title=" Jesus clicks on Bot&Atilde;&sup3;n pagina iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
-                <img src="e94ece79a2d0b0f2b334217c685ce2a658d0524fb40b05415fefb6ea75fbce64.png" title=" Jesus navega al inicio sesion (completed)" width="1920"/>
-                <img src="e94ece79a2d0b0f2b334217c685ce2a658d0524fb40b05415fefb6ea75fbce64.png" title=" Jesus iniciar sesion" width="1920"/>
-                <img src="b07bd5e83250aaf61c92682d8a308c0a9b4502bced0d6d45f42a685dfaddee38.png" title=" Jesus enters 'juanmanuelgofu@gmail.com' into Campo email" width="1920"/>
-                <img src="0cc72cc44c11d05171e31a531dba2ac225edf527b30a80e85762f4efddbe83f9.png" title=" Jesus enters 'juanmanuelgofu@gmail.com' into Campo email (completed)" width="1920"/>
-                <img src="0cc72cc44c11d05171e31a531dba2ac225edf527b30a80e85762f4efddbe83f9.png" title=" Jesus enters 'Juan1997' into Campo contrase&Atilde;&plusmn;a" width="1920"/>
-                <img src="a16488477a5a33986ea1f5ab3fe30a054c97335b5eb91cfd559f08501e06982d.png" title=" Jesus enters 'Juan1997' into Campo contrase&Atilde;&plusmn;a (completed)" width="1920"/>
-                <img src="a16488477a5a33986ea1f5ab3fe30a054c97335b5eb91cfd559f08501e06982d.png" title=" Jesus clicks on Bot&Atilde;&sup3;n iniciar sesi&Atilde;&sup3;n" width="1920"/>
-                <img src="070b814c53f81bebb5953aa06aef56ac8b486a6589410b5b6ebb704f2a740b11.png" title=" Jesus clicks on Bot&Atilde;&sup3;n iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
-                <img src="070b814c53f81bebb5953aa06aef56ac8b486a6589410b5b6ebb704f2a740b11.png" title=" Jesus iniciar sesion (completed)" width="1920"/>
-                <img src="78d0f5cb479130326c6f7165b8e0f65395724de6cacc0084e1737c85f2d7ab5b.png" title=" Given que el usuario esta logueado en la pagina principal (completed)" width="1920"/>
-                <img src="ca7320a8fcce7f3afaf8a102bca1ce39eb72be249a70661ced5f04bc7aab1d64.png" title=" When el usuario finaliza una compra agregando productos en el carrito" width="1920"/>
-                <img src="ca7320a8fcce7f3afaf8a102bca1ce39eb72be249a70661ced5f04bc7aab1d64.png" title=" Jesus agregar productos carrito" width="1920"/>
-                <img src="eb6bac3139bdf4fd024bfe5de82c6cad8ec7423526cff1180967e100ffbcd572.png" title=" Jesus clicks on Categoria carne" width="1920"/>
-                <img src="f97698048f4b3a041dcdb8cd6d18308509873546d85eea1b59a9b3fd42bd9682.png" title=" Jesus clicks on Categoria carne (completed)" width="1920"/>
-                <img src="f97698048f4b3a041dcdb8cd6d18308509873546d85eea1b59a9b3fd42bd9682.png" title=" Jesus clicks on Subcategoria carnes nacionales" width="1920"/>
+                <img src="bc32f36417e52a3d29bbb6619e4765b7c14f6e9db4fafb5a3c21f025964974d9.png" title=" Jesus opens the Pagina inicial (completed)" width="1920"/>
+                <img src="bc32f36417e52a3d29bbb6619e4765b7c14f6e9db4fafb5a3c21f025964974d9.png" title=" Jesus abrir pagina inicial (completed)" width="1920"/>
+                <img src="497024788210317917a5c6dbee1bc87877452870a4dceb02e96893dc58739a8b.png" title=" Jesus navega al inicio sesion" width="1920"/>
+                <img src="0f0ffd797ab95fab31c7e318573982a08fa3b0794564774049e57f4062a27012.png" title=" Jesus clicks on Bot&Atilde;&sup3;n pagina iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="35c6ecc2dcdff6e170349efd688874cfb2e45cf80c71f4b7734b4391fd5f8f53.png" title=" Jesus clicks on Bot&Atilde;&sup3;n pagina iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="35c6ecc2dcdff6e170349efd688874cfb2e45cf80c71f4b7734b4391fd5f8f53.png" title=" Jesus navega al inicio sesion (completed)" width="1920"/>
+                <img src="35c6ecc2dcdff6e170349efd688874cfb2e45cf80c71f4b7734b4391fd5f8f53.png" title=" Jesus iniciar sesion" width="1920"/>
+                <img src="8581c1d7c14c9dcf26926c8260ff1475f0abcd2d489d33b04bf46243c305e030.png" title=" Jesus enters 'juanmanuelgofu@gmail.com' into Campo email" width="1920"/>
+                <img src="25a55d273a02a2c5edd606895148e0b70a9b87da93a4d94c17a8a0829ed55ea9.png" title=" Jesus enters 'juanmanuelgofu@gmail.com' into Campo email (completed)" width="1920"/>
+                <img src="25a55d273a02a2c5edd606895148e0b70a9b87da93a4d94c17a8a0829ed55ea9.png" title=" Jesus enters 'Juan1997' into Campo contrase&Atilde;&plusmn;a" width="1920"/>
+                <img src="5b28e4eae77a36b275afe099fa32736f2861eaa47019e18824e637382926a98d.png" title=" Jesus enters 'Juan1997' into Campo contrase&Atilde;&plusmn;a (completed)" width="1920"/>
+                <img src="5b28e4eae77a36b275afe099fa32736f2861eaa47019e18824e637382926a98d.png" title=" Jesus clicks on Bot&Atilde;&sup3;n iniciar sesi&Atilde;&sup3;n" width="1920"/>
+                <img src="a776d528fa6c4fd4db9332ac5ed5a805389beefcb4e3a39d80d032b4a9e6a5d4.png" title=" Jesus clicks on Bot&Atilde;&sup3;n iniciar sesi&Atilde;&sup3;n (completed)" width="1920"/>
+                <img src="a776d528fa6c4fd4db9332ac5ed5a805389beefcb4e3a39d80d032b4a9e6a5d4.png" title=" Jesus iniciar sesion (completed)" width="1920"/>
+                <img src="a776d528fa6c4fd4db9332ac5ed5a805389beefcb4e3a39d80d032b4a9e6a5d4.png" title=" Given que el usuario esta logueado en la pagina principal (completed)" width="1920"/>
+                <img src="5b50a81738099da7fdf40ac967df72c9662da6736de0ce5de0bf87fef4b14b5b.png" title=" When el usuario finaliza una compra agregando productos en el carrito" width="1920"/>
+                <img src="5b50a81738099da7fdf40ac967df72c9662da6736de0ce5de0bf87fef4b14b5b.png" title=" Jesus agregar productos carrito" width="1920"/>
+                <img src="d8aa34fcb24ae35b3a7c524ae07ce7a5d517fe933a3e92a8c6a338e28cd6955b.png" title=" Jesus clicks on Categoria carne" width="1920"/>
+                <img src="d307c8fec9766fa7752e5008e567a2579fbe60b6921aa361990d1441a4fe208f.png" title=" Jesus clicks on Categoria carne (completed)" width="1920"/>
+                <img src="d307c8fec9766fa7752e5008e567a2579fbe60b6921aa361990d1441a4fe208f.png" title=" Jesus clicks on Subcategoria carnes nacionales" width="1920"/>
                 <img src="f2b1ca768d1e0e6b52faca061b39eb0ae7320fc18c53c2c1beeafa25b079371a.png" title=" Jesus clicks on Subcategoria carnes nacionales (completed)" width="1920"/>
                 <img src="f2b1ca768d1e0e6b52faca061b39eb0ae7320fc18c53c2c1beeafa25b079371a.png" title=" Jesus clicks on Dropdown list ordenar por" width="1920"/>
-                <img src="47b22339b00dbfe7f3677bf3651108f5a50d018262812b44ea3c1035ea5657fc.png" title=" Jesus clicks on Dropdown list ordenar por (completed)" width="1920"/>
-                <img src="47b22339b00dbfe7f3677bf3651108f5a50d018262812b44ea3c1035ea5657fc.png" title=" Jesus clicks on ordenar por precio m&Atilde;&iexcl;s bajo" width="1920"/>
+                <img src="977815265fbbbb77b12d61a447e20ef7c9d6761d3ec602ca535a93f0eb71849e.png" title=" Jesus clicks on Dropdown list ordenar por (completed)" width="1920"/>
+                <img src="977815265fbbbb77b12d61a447e20ef7c9d6761d3ec602ca535a93f0eb71849e.png" title=" Jesus clicks on ordenar por precio m&Atilde;&iexcl;s bajo" width="1920"/>
                 <img src="f2b1ca768d1e0e6b52faca061b39eb0ae7320fc18c53c2c1beeafa25b079371a.png" title=" Jesus clicks on ordenar por precio m&Atilde;&iexcl;s bajo (completed)" width="1920"/>
-                <img src="f2b1ca768d1e0e6b52faca061b39eb0ae7320fc18c53c2c1beeafa25b079371a.png" title=" Jesus refreshes the browser" width="1920"/>
-                <img src="f2b1ca768d1e0e6b52faca061b39eb0ae7320fc18c53c2c1beeafa25b079371a.png" title=" Jesus refreshes the browser (completed)" width="1920"/>
                 <img src="f2b1ca768d1e0e6b52faca061b39eb0ae7320fc18c53c2c1beeafa25b079371a.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 1" width="1920"/>
-                <img src="6f22ebaaccdd8c3b7345ead72d724adb8d18cac644d406f23b3a4d012819ca21.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 1 (completed)" width="1920"/>
-                <img src="6f22ebaaccdd8c3b7345ead72d724adb8d18cac644d406f23b3a4d012819ca21.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 2" width="1920"/>
-                <img src="9c9d31394d49d2c05ae8fef1c34ebb67ccfba65e76a05519472f1685d6f159d6.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 2 (completed)" width="1920"/>
-                <img src="9c9d31394d49d2c05ae8fef1c34ebb67ccfba65e76a05519472f1685d6f159d6.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 3" width="1920"/>
-                <img src="d05ec4aedeb44a45fa8bf1173d81f4fa455aa08edda45228977104d48e5444cf.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 3 (completed)" width="1920"/>
-                <img src="d05ec4aedeb44a45fa8bf1173d81f4fa455aa08edda45228977104d48e5444cf.png" title=" Jesus clicks on Bot&Atilde;&sup3;n carrito de compras" width="1920"/>
-                <img src="6c43d5826be8b7d834a58d1a0759294de3c6aee50dbb929b02192c1e07f3a385.png" title=" Jesus clicks on Bot&Atilde;&sup3;n carrito de compras (completed)" width="1920"/>
-                <img src="6c43d5826be8b7d834a58d1a0759294de3c6aee50dbb929b02192c1e07f3a385.png" title=" Jesus clicks on Bot&Atilde;&sup3;n finalizar compra" width="1920"/>
-                <img src="c478b9bea232ea94fccec75bb2650f8253f3df7929e1447c800374c7d0ed7f24.png" title=" Jesus clicks on Bot&Atilde;&sup3;n finalizar compra (completed)" width="1920"/>
-                <img src="c478b9bea232ea94fccec75bb2650f8253f3df7929e1447c800374c7d0ed7f24.png" title=" Jesus agregar productos carrito (completed)" width="1920"/>
-                <img src="d79d7481903670d14ed4af8a25af51cd9ab673d4f6c26a02a9d0765cd63fe8b5.png" title=" When el usuario finaliza una compra agregando productos en el carrito (completed)" width="1920"/>
-                <img src="d79d7481903670d14ed4af8a25af51cd9ab673d4f6c26a02a9d0765cd63fe8b5.png" title=" And completa la informacion de envio y facturacion" width="1920"/>
-                <img src="6275ca733b29331a57f4a84f844484abaa0588f66cd7a4b3572fb94eade12f0e.png" title=" Then debera ser redireccionado a la pagina de pago" width="1920"/>
-                <img src="6275ca733b29331a57f4a84f844484abaa0588f66cd7a4b3572fb94eade12f0e.png" title=" Then debera ser redireccionado a la pagina de pago (completed): <span class='success-color'>SUCCESS</span>" width="1920"/>
+                <img src="e49ba247412c0e957a7842f28c35b49d7340fcea50ca38c690a0ef433a569f3a.png" title=" Jesus clicks on Bot&Atilde;&sup3;n agregar carrito producto 1 (completed): <span class='error-color'>ERROR</span>" width="1920"/>
             </div>
         </div>
 

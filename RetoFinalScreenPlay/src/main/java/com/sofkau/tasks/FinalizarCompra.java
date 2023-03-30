@@ -13,11 +13,12 @@ public class FinalizarCompra implements Task {
                 Click.on(BOTON_CONFIRMAR_DIRECCION),
                 Click.on(BOTON_CONFIRMAR_OPCION_ENVIO),
                 Click.on(OPCION_DE_PAGO),
-                Click.on(TERMINOS_CONDICIONES)
+                Click.on(TERMINOS_CONDICIONES),
+                Click.on(BOTON_PAGAR_AHORA)
         );
     }
 
-    public static FinalizarCompra finalizarCompra () {
+    public static FinalizarCompra finalizarCompra() {
         return new FinalizarCompra();
     }
 }

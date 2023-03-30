@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.apache.log4j.PropertyConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -19,6 +20,7 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 
 public class Configuracion {
     private static final String SWITCHES = "--remote-allow-origins=*";
+    private static final String SWITCHES_DOS = "--incognito*";
     private static final String ACTOR = "Jesus";
     private static final int DIEZ_SEGUNDOS = 10;
 
@@ -36,6 +38,7 @@ public class Configuracion {
     private void configurarDriver() {
         ChromeOptions co = new ChromeOptions();
         co.addArguments(SWITCHES);
+        co.addArguments(SWITCHES_DOS);
         WebDriverManager.chromedriver().setup();
         webDriver = new ChromeDriver(co);
     }
@@ -56,11 +59,5 @@ public class Configuracion {
     private void setUplog4j() {
         PropertyConfigurator.configure(USER_DIR.value() + LOG4J_PROPERTIES_FILE_PATH.getValue());
     }
-
-    public static void waitExplicit() {
-        WebDriverWait wait = new WebDriverWait(getDriver(), DIEZ_SEGUNDOS);
-        wait.until(ExpectedConditions.alertIsPresent());
-    }
-
 
 }

@@ -15,11 +15,11 @@ public class ComprarProductos extends PageObject {
             .located(By.xpath("//i[@class='material-icons float-xs-right']"));
     public static final Target PRECIO_MAS_BAJO = Target.the("ordenar por precio más bajo")
             .located(By.xpath("(//div//a[contains(@class,'select-list js-search-link')])[3]"));
-    public static final Target AGREGAR_CARRITO_CARNE1 = Target.the("Botón agregar carrito producto 1")
+    public static final Target AGREGAR_CARRITO_CARNE_UNO = Target.the("Botón agregar carrito producto 1")
             .located(By.xpath("(//*[@class='btn add-to-cart'])[2]"));
-    public static final Target AGREGAR_CARRITO_CARNE2 = Target.the("Botón agregar carrito producto 2")
+    public static final Target AGREGAR_CARRITO_CARNE_DOS = Target.the("Botón agregar carrito producto 2")
             .located(By.xpath("(//*[@class='btn add-to-cart'])[3]"));
-    public static final Target AGREGAR_CARRITO_CARNE3 = Target.the("Botón agregar carrito producto 3")
+    public static final Target AGREGAR_CARRITO_CARNE_TRES = Target.the("Botón agregar carrito producto 3")
             .located(By.xpath("(//*[@class='btn add-to-cart'])[4]"));
     public static final Target BOTON_CARRITO = Target.the("Botón carrito de compras")
             .located(By.className("cart_link"));
