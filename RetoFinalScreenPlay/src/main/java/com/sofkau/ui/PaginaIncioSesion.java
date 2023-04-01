@@ -5,6 +5,8 @@ import net.thucydides.core.pages.PageObject;
 import org.openqa.selenium.By;
 
 public class PaginaIncioSesion extends PageObject {
+    public static final Target MENSAJE_COOKIES = Target.the("Mensaje cookies")
+            .located(By.className("closeFontAwesome"));
     public static final Target BOTON_INICIAR_SESION = Target.the("Botón pagina iniciar sesión")
             .located(By.xpath("(//*[@class='account'])[1]"));
     public static final Target CAMPO_EMAIL = Target.the("Campo email")

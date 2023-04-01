@@ -8,11 +8,14 @@ import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.jupiter.api.Assertions;
 
+import static com.sofkau.questions.MensajeCompra.mensajeCompra;
 import static com.sofkau.tasks.AgregarProductosCarrito.agregarProductosCarrito;
 import static com.sofkau.tasks.FinalizarCompra.finalizarCompra;
 import static com.sofkau.tasks.IniciarSesion.iniciarSesion;
 import static com.sofkau.tasks.NavegaAlInicioSesion.navegaAlInicioSesion;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 public class CompraStepDefinitions extends Configuracion {
     public static Logger LOGGER = Logger.getLogger(CompraStepDefinitions.class);
@@ -68,7 +71,9 @@ public class CompraStepDefinitions extends Configuracion {
     @Then("debera ser redireccionado a la pagina de pago")
     public void deberaSerRedireccionadoALaPaginaDePago() {
         try {
-
+            theActorInTheSpotlight().should(
+                    seeThat(mensajeCompra(), equalTo("Detalles de tu compra"))
+            );
         } catch (Exception exception) {
             quitarDriver();
             Assertions.fail(exception.getMessage(), exception);

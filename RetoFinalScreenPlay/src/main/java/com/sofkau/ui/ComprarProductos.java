@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 
 public class ComprarProductos extends PageObject {
 
-
     public static final Target CATEGORIA_CARNES = Target.the("Categoria carne")
             .located(By.xpath("(//span[@class='grower CLOSE'])[8]"));
     public static final Target SUBCATEGORIA_CARNES_NACIONALES = Target.the("Subcategoria carnes nacionales")
@@ -16,11 +15,12 @@ public class ComprarProductos extends PageObject {
     public static final Target PRECIO_MAS_BAJO = Target.the("ordenar por precio más bajo")
             .located(By.xpath("(//div//a[contains(@class,'select-list js-search-link')])[3]"));
     public static final Target AGREGAR_CARRITO_CARNE_UNO = Target.the("Botón agregar carrito producto 1")
-            .located(By.xpath("(//*[@class='btn add-to-cart'])[2]"));
+            .located(By.xpath("(//*[@class='btn add-to-cart'])[1]"));
+    public static final Target REFERENCIA_SCROLL = Target.the("localizardor para scroll")
+            .located(By.xpath("(//*[@class='btn add-to-cart'])[8]"));
+
     public static final Target AGREGAR_CARRITO_CARNE_DOS = Target.the("Botón agregar carrito producto 2")
-            .located(By.xpath("(//*[@class='btn add-to-cart'])[3]"));
-    public static final Target AGREGAR_CARRITO_CARNE_TRES = Target.the("Botón agregar carrito producto 3")
-            .located(By.xpath("(//*[@class='btn add-to-cart'])[4]"));
+            .located(By.xpath("(//*[@class='btn add-to-cart'])[12]"));
     public static final Target BOTON_CARRITO = Target.the("Botón carrito de compras")
             .located(By.className("cart_link"));
     public  static final Target BOTON_FINALIZAR_COMPRA = Target.the("Botón finalizar compra")
